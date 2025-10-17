@@ -54,12 +54,11 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 6vw;
-    padding-top: 8vh;
+    padding: 0;
 }
 /* General Resets and Layout */
 body {
@@ -73,10 +72,13 @@ body {
 }
 
 .container {
-    max-width: 100vw;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Header and Navigation (Based on provided images) */
@@ -118,10 +120,26 @@ h1, h2 {
     text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF; /* Neon glow */
 }
 
+/* Specific heading colors requested */
+#home h1 {
+    color: #154406; /* deep forest green */
+    text-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+
+#content-portfolio .portfolio-section h2,
+#content-portfolio h2 {
+    color: #faf3d1; /* very light pale gold/yellow */
+    text-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.contact-heading {
+    color: #004b54; /* deep teal / dark blue */
+}
+
 hr {
     width: 60px;
     height: 3px;
-    background-color: #00FFFF;
+    background-color: #f4d76d;
     border: none;
     margin: 10px auto 30px auto;
 }
@@ -139,14 +157,14 @@ hr {
 
 .tagline {
     font-size: 1.5em;
-    color: #00FFFF;
+    color: #f0c0ed;
     margin: 10px 0 20px 0;
 }
 
 .description {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #ccc;
+    color: #1b1515 !important;
     margin-bottom: 30px;
 }
 
@@ -297,21 +315,66 @@ input[type="text"], select {
     margin-bottom: 30px;
 }
 
+.contact-heading {
+    text-align: center;
+    justify-self: top;
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+.contact-desc {
+    text-align: center;
+    justify-self: center;
+    color: #000;
+    margin-bottom: 18px;
+}
+.centered-social {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    align-items: center;
+    width: 100%;
+}
+.social-item {
+    text-align: center;
+    justify-content: center;
+}
+.social-item i {
+    font-size: 2rem;
+    color: #000;
+    justify-self: center;
+    transition: transform 0.18s ease, color 0.18s ease;
+}
+.social-label {
+    color: #000;
+    margin-top: 8px;
+    justify-self: center;
+    font-size: 1.5em; /* set label size */
+    transition: transform 0.18s ease, color 0.18s ease;
+}
+
+.social-item:hover i,
+.social-item:hover .social-label {
+    transform: scale(1.28);
+    color: #00FFFF; /* cyan on hover */
+}
+
 .social-media {
     text-align: center;
-    font-size: 2em;
+    justify-items:center ;
+    font-size: 0.5em;
     margin-bottom: 40px;
 }
 
 .social-media a {
-    color: #00FFFF;
+    color: #000;
     margin: 0 15px;
     transition: color 0.3s;
 }
 
 .social-media a:hover {
-    color: #00FFFF;
-    text-shadow: 0 0 10px #00FFFF;
+    color: #000;
+    text-shadow: none;
 }
 
 .copyright {
@@ -396,26 +459,4 @@ input[type="text"], select {
 
 .read-more:hover {
     background-color: #218838; /* Darker green on hover */
-}
-
-h4 { /* Change to #contact h4 if you updated the HTML tag */
-    /* All the previous styles you provided */
-    padding-bottom: 15px;
-    letter-spacing: normal;
-    font-family: var(--main-font-family);
-    font-style: normal;
-    font-size: 60px;
-    color: var(--main-fonts-color);
-    text-shadow: 0px 0px 40px var(--main-decor-color);
-    
-    /* --- NEW ALIGNMENT STYLES --- */
-    
-    /* 1. Center the text and the <hr> content inside the h3/h4 block */
-    text-align: center; 
-    
-    /* 2. Set a maximum width so the element can be centered */
-    max-width: 80%; /* Adjust this percentage as needed */
-    
-    /* 3. Center the h3/h4 block itself horizontally on the page */
-    margin: 0 auto;
 }
