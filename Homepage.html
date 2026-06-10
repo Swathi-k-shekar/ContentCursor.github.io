@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Homepage.css">
-    <title>KannadaKandamma - Portfolio</title>
+    <title>KannadaKandamma - Dark Fantasy</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
         <nav>
             <ul class="nav-bar">
                 <li><a class="nav-link" href="#home">Home</a></li>
-                <li><a class="nav-link" href="#content-portfolio">Contents</a></li>
+                <li><a class="nav-link" href="#content-portfolio">Portfolio</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -29,13 +29,7 @@
                         "ಕಣ್ಮಿಂಚು ಕಣ್ಣಲ್ಲೆ ತೇಲಿಹೋದಾಗ ಜೀವ ಜೀವನದ ಅಲೆಗಳಿಗೆ ಸಿಲುಕಿ ಕಲ್ಲಾದಾಗ ಸ್ವಪ್ನಗಳು ಪುಸ್ತಕದ ಪುಟಗಳಿಗೆ ಸೀಮಿತವಾದಾಗ ಶುರುವಾಯಿತು..... ಕನ್ನಡ ಕಂದಮ್ಮನ ನುಡಿಗಳು"
                     </p>
 
-                    <div class="skills">
-                        <span class="skill-tag">Poetry</span>
-                        <span class="skill-tag">Cinema</span>
-                        <span class="skill-tag">Drama</span>
-                        <span class="skill-tag">YouTube</span>
-                        <span class="skill-tag">K-Drama Slang</span>
-                    </div>
+                    <a href="#content-portfolio" class="view-collection-btn">View Collection</a>
                 </section>
             </div>
 
@@ -44,17 +38,14 @@
                  <section class="portfolio-section">
                  <h2>Portfolio</h2>
                  <hr>
-                 <p class="contact-desc">Explore my works across various categories.</p>
+                 <p>Explore the realms of storytelling.</p>
 
                  <!-- Filters -->
                  <div class="filters">
                      <select id="filter-category">
                          <option value="all">All Categories</option>
                      </select>
-                     <select id="filter-language">
-                         <option value="all">All Languages</option>
-                     </select>
-                     <button class="clear-btn" onclick="clearFilters()">Clear Filters</button>
+                     <button class="clear-btn" onclick="clearFilters()">Clear</button>
                  </div>
 
                  <div id="content-list" class="content-grid">
@@ -67,24 +58,36 @@
         <div id="contact" class="section-fullscreen">
             <h2 class="contact-heading">Contact</h2>
             <hr>
-            <div class="contact-desc">Feel free to contact me on my social media.</div>
-            <div class="social-media centered-social">
-                <div class="social-container">
-                    <a href="#" target="_blank" class="social-item"><i class='fab fa-instagram'></i></a>
-                    <div class="social-label">Instagram</div>
-                </div>
-                <div class="social-container">
-                    <a href="#" target="_blank" class="social-item"><i class='fab fa-youtube'></i></a>
-                    <div class="social-label">YouTube</div>
-                </div>
-                <div class="social-container">
-                    <a href="#" target="_blank" class="social-item"><i class='fas fa-envelope'></i></a>
-                    <div class="social-label">Email</div>
-                </div>
-                <div class="social-container">
-                    <a href="#" target="_blank" class="social-item"><i class='fab fa-whatsapp'></i></a>
-                    <div class="social-label">WhatsApp</div>
-                </div>
+            <div class="contact-desc">Reach out through the ether.</div>
+            <div class="vertical-social">
+                <a href="#" target="_blank" class="social-container">
+                    <div class="social-item"><i class='fab fa-instagram'></i></div>
+                    <div class="social-label">
+                        <span class="en">Instagram</span>
+                        <span class="kn">ಇನ್ಸ್ಟಾಗ್ರಾಮ್</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="social-container">
+                    <div class="social-item"><i class='fab fa-youtube'></i></div>
+                    <div class="social-label">
+                        <span class="en">YouTube</span>
+                        <span class="kn">ಯೂಟ್ಯೂಬ್</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="social-container">
+                    <div class="social-item"><i class='fas fa-envelope'></i></div>
+                    <div class="social-label">
+                        <span class="en">Email</span>
+                        <span class="kn">ಇಮೇಲ್</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="social-container">
+                    <div class="social-item"><i class='fab fa-whatsapp'></i></div>
+                    <div class="social-label">
+                        <span class="en">WhatsApp</span>
+                        <span class="kn">ವಾಟ್ಸಾಪ್</span>
+                    </div>
+                </a>
             </div>
         </div>
 
