@@ -75,17 +75,17 @@ header {
 
 /* Backgrounds */
 #home {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('assets/Moonlit Silhouette.png');
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('Moonlit Silhouette.png');
     background-color: #111; /* Fallback */
 }
 
 #content-portfolio {
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('assets/Fiery Nebula.png');
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('Fiery Nebula.png');
     background-color: #200000; /* Fallback */
 }
 
 #contact {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.85)), url('assets/Obsidian Cracked Earth.png');
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.85)), url('Obsidian Cracked Earth.png');
     background-color: #0a0a0a; /* Fallback */
 }
 
