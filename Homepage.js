@@ -9,35 +9,35 @@ document.addEventListener('DOMContentLoaded', () => {
             titleEn: 'Poetry',
             category: 'Poetry',
             summary: "Expressive verses that capture the essence of emotions and life's simple, profound moments.",
-            iconFile: 'Feather Quill.png'
+            iconFile: 'assets/Feather Quill.png'
         },
         {
             title: 'ಚಲನಚಿತ್ರ',
             titleEn: 'Cinema',
             category: 'Cinema',
             summary: "Insights, scripts, and discussions diving into the world of storytelling on the silver screen.",
-            iconFile: 'Film Reel.png'
+            iconFile: 'assets/Film Reel.png'
         },
         {
             title: 'ನಾಟಕ',
             titleEn: 'Drama Style',
             category: 'Drama Style',
             summary: "Engaging narratives and character-driven plays that bring the stage alive.",
-            iconFile: 'Theater Masks.png'
+            iconFile: 'assets/Theater Masks.png'
         },
         {
             title: 'ಯೂಟ್ಯೂಬ್ ಶಾರ್ಟ್ಸ್',
             titleEn: 'YouTube Short Episodes',
             category: 'YouTube Short Episodes',
             summary: "Creative video content spanning varied genres, designed for engaging modern audiences.",
-            iconFile: 'Mobile Phone Play.png'
+            iconFile: 'assets/Mobile Phone Play.png'
         },
         {
             title: 'ಕೆ-ಡ್ರಾಮಾ ಭಾಷೆ',
             titleEn: 'K-Drama Slang',
             category: 'K-Drama Slang',
             summary: "A fun, bridge-building guide translating popular K-Drama slangs into local context.",
-            iconFile: 'Speech Bubble.png'
+            iconFile: 'assets/Speech Bubble.png'
         }
     ];
 
