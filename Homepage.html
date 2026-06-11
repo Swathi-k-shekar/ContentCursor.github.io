@@ -4,120 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Homepage.css">
-    <title>SapnaRadnya - Content Management Portfolio</title>
+    <title>KannadaKandamma - Dark Fantasy</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <nav>
-                <ul class="nav-bar">
-                    <li><a class="nav-link" href="#home">Home</a></li>
-                    <li><a class="nav-link" href="#content-portfolio">Contents</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#content-portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <div class="container">
         <main>
              <!--──────────────Home Section────────────────-->
             <div id="home" class="section-fullscreen">
                 <section class="intro">
+                    <h1>ಕನ್ನಡ ಕಂದಮ್ಮ</h1>
                     <p class="description">
-                        "Fantasies that has thirst to be known, Imaginations that has to be identified, stories that screams to be alive, chacters that ready to take up minds that's what waiting Below"
+                        "ಕಣ್ಮಿಂಚು ಕಣ್ಣಲ್ಲೆ ತೇಲಿಹೋದಾಗ ಜೀವ ಜೀವನದ ಅಲೆಗಳಿಗೆ ಸಿಲುಕಿ ಕಲ್ಲಾದಾಗ ಸ್ವಪ್ನಗಳು ಪುಸ್ತಕದ ಪುಟಗಳಿಗೆ ಸೀಮಿತವಾದಾಗ ಶುರುವಾಯಿತು..... ಕನ್ನಡ ಕಂದಮ್ಮನ ನುಡಿಗಳು"
                     </p>
-                    
-                    <h1>Sapna Radnya</h1>
-                    <p class="tagline"> Fantasy Fiction Writer</p>
-                    
-                    <div class="skills">
-                        <span class="skill-tag"> Short stories </span>
-                        <span class="skill-tag"> Long form stories </span>
-                        <span class="skill-tag"> Poems </span>
-                        <span class="skill-tag"> Songs </span>
-                        <span class="skill-tag"> Thoughts </span>
-                    </div>
+
+                    <a href="#content-portfolio" class="view-collection-btn">View Collection</a>
                 </section>
             </div>
-             <!--──────────────Content Mangement Section────────────────-->
+
+             <!--──────────────Content Portfolio Section────────────────-->
              <div id="content-portfolio" class="section-fullscreen">
                  <section class="portfolio-section">
-                 <h2>Magic of Imagination</h2>
+                 <h2>Portfolio</h2>
                  <hr>
-                 <p>Words of Dreams that flow through mind and heart of millon Butterflies.</p>
-                
-             <div id="content-list" class="content-grid">
-                 
-                 <div class="content-card" data-category="Short Story" data-language="Kannada">
-                 <h3>Kayavana Aranyamya</h3>
-                 <p class="card-meta">Category: Short Story | Language: English</p>
-                <p class="card-summary">A Story of a Nature lover moved out for a town life soffocated from the every possible way and built his own world far away  from family and lived with nature Forever inseparable.</p>
-                <a href="#" target="_blank" class="read-more">Read Sample </a>
-                 </div>
-                
+                 <p>Explore the realms of storytelling.</p>
 
-                  <div class="content-card" data-category="Thoughts" data-language="English">
-                 <h3>Mystrey Mic</h3>
-                 <p class="card-meta">Category: Thoughts | Language: English</p>
-                 <p class="card-summary">Story revoles around a Young man who was considered as faluire by his parents and whole universe. got a Magical Voice and emerge as a Musical Idol.</p>
-                 <a href="#" target="_blank" class="read-more">Read Sample </a>
+                 <!-- Filters -->
+                 <div class="filters">
+                     <select id="filter-category">
+                         <option value="all">All Categories</option>
+                     </select>
+                     <button class="clear-btn" onclick="clearFilters()">Clear</button>
                  </div>
 
-                <div class="content-card" data-category="Thoughts" data-language="English">
-                 <h3>Myamnar Mayuri</h3>
-                 <p class="card-meta">Category: Thoughts | Language: English</p>
-                 <p class="card-summary">A small town girl evolution from the feilds to the Heels following her passion on modling. How she adopted to the fast growing selfish world with her mindset and her creativity How she faced growth.</p>
-                 <a href="#" target="_blank" class="read-more">Read Sample </a>
+                 <div id="content-list" class="content-grid">
+                     <!-- Populated by Homepage.js from localStorage -->
                  </div>
-
-
-                 <div class="content-card" data-category="Thoughts" data-language="English">
-                 <h3>Jungule Journey</h3>
-                 <p class="card-meta">Category: Thoughts | Language: English</p>
-                 <p class="card-summary">Animal Kingdom where the clever Fox got treated like a King and Folls becoming prey of the cleverest. How they were getting their life saved each day Strongest to weekest.</p>
-                 <a href="#" target="_blank" class="read-more">Read Sample </a>
-                 </div>
-                
-    
-                
-                </div>
             </section>
         </div>
-                  
 
        <!--──────────────Contact────────────────-->
-    <div id="contact" class="section-fullscreen">
-        <!--────social media links─────-->
-        <h2 class="contact-heading">Contact<hr></h2>
-        <div class="contact-desc">Feel free to contact me on my social media.</div>
-        <div class="social-media centered-social">
-            <div class="social-item">
-                <a href="https://twitter.com/Swathikshekar" target="_blank"><i class='fab fa-twitter'></i></a>
-                <div class="social-label">Twitter</div>
-            </div>
-            <div class="social-item">
-                <a href="https://github.com/Swathi-k-shekar" target="_blank"><i class='fab fa-github'></i></a>
-                <div class="social-label">GitHub</div>
-            </div>
-            <div class="social-item">
-                <a href="https://www.linkedin.com/in/swathi-k-s-296006206/" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-                <div class="social-label">LinkedIn</div>
-            </div>
-            <div class="social-item">
-                <a href="https://www.youtube.com/@Astrophile24" target="_blank"><i class="fab fa-youtube"></i></a>
-                <div class="social-label">YouTube</div>
+        <div id="contact" class="section-fullscreen">
+            <h2 class="contact-heading">Contact</h2>
+            <hr>
+            <div class="contact-desc">Reach out through the ether.</div>
+            <div class="vertical-social">
+                <a href="#" target="_blank" class="social-container">
+                    <div class="social-item"><i class='fab fa-instagram'></i></div>
+                    <div class="social-label">
+                        <span class="en">Instagram</span>
+                        <span class="kn">ಇನ್ಸ್ಟಾಗ್ರಾಮ್</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="social-container">
+                    <div class="social-item"><i class='fab fa-youtube'></i></div>
+                    <div class="social-label">
+                        <span class="en">YouTube</span>
+                        <span class="kn">ಯೂಟ್ಯೂಬ್</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="social-container">
+                    <div class="social-item"><i class='fas fa-envelope'></i></div>
+                    <div class="social-label">
+                        <span class="en">Email</span>
+                        <span class="kn">ಇಮೇಲ್</span>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="social-container">
+                    <div class="social-item"><i class='fab fa-whatsapp'></i></div>
+                    <div class="social-label">
+                        <span class="en">WhatsApp</span>
+                        <span class="kn">ವಾಟ್ಸಾಪ್</span>
+                    </div>
+                </a>
             </div>
         </div>
+
+        </main>
     </div>
 
-    </main>
     <footer class="copyright">© 2025
-        <a href="https://repl.it/@lilykhan" target="_blank"> SapnaRadnya</a>
+        <a href="#" target="_blank"> KannadaKandamma</a>
     </footer>
-
-    </div>
-
 
     <script src="Homepage.js"></script>
 </body>
