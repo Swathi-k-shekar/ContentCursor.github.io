@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: 'ಸೀರಿಯಲ್',
             titleEn: 'Serial',
-            category: 'Serial,Series',
+            category: 'Serial',
             summary: "Engaging narratives and character-driven plays that brings the character alive.",
             iconFile: 'assets/Theater Masks.png'
         },
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             title: 'ಸಣ್ಣ ಕಥೆಗಳು',
             titleEn: 'Series',
-            category: 'Serial, Series',
+            category: 'Series',
             summary: "A fun, bridge-building Series for K-Drama lovers with Indain slang adding local context.",
             iconFile: 'assets/Speech Bubble.png'
         },
