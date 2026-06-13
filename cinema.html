@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Homepage.css">
+    <title>Cinema Stories - KannadaKandamma</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <style>
+        .cinema-list {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cinema-item {
+            background: linear-gradient(145deg, rgba(30, 30, 30, 0.8), rgba(10, 10, 10, 0.9));
+            border: 1px solid rgba(139, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .cinema-item:hover {
+            transform: translateY(-5px);
+            border-color: #FFD700;
+        }
+        .cinema-title {
+            color: #FFD700;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-family: 'Noto Serif Kannada', serif;
+        }
+        .cinema-desc {
+            color: #ccc;
+            font-size: 1em;
+            line-height: 1.5;
+            font-family: 'Arima', serif;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: #FFD700;
+            border: 2px solid #FFD700;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: 'Arima', serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+            text-shadow: 0 0 8px #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li><a class="nav-link" href="index.html#home">Home</a></li>
+                <li><a class="nav-link" href="index.html#content-portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <div id="cinema" class="section-fullscreen" style="background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('assets/Film Reel.png'); background-color: #1a0000;">
+                <section style="text-align: center; width: 100%; padding-top: 80px;">
+                    <h2>Cinema Stories</h2>
+                    <hr>
+                    <ul class="cinema-list" id="cinema-list">
+                        <!-- Populated by cinema.js -->
+                    </ul>
+                    <a href="index.html#content-portfolio" class="back-btn">Back to Portfolio</a>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer class="copyright">© 2025
+        <a href="index.html" target="_blank"> KannadaKandamma</a>
+    </footer>
+
+    <script src="cinema.js"></script>
+</body>
+</html>

@@ -19,13 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             iconFile: 'assets/Theater Masks.png'
         },
         {
-            title: 'ಹಾಡುಗಳು',
-            titleEn: 'Songs',
-            category: 'Songs',
-            summary: "Creative Audio content spanning varied genres, designed for engaging modern audiences. Lyrics suitable for classical Music, Rap, Pop and Cenima",
-            iconFile: 'assets/Mobile Phone Play.png'
-        },
-        {
             title: 'ಸಣ್ಣ ಕಥೆಗಳು',
             titleEn: 'Series',
             category: 'Series',
@@ -61,6 +54,16 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="card-meta">${item.titleEn}</p>
             <p class="card-summary">${item.summary || ''}</p>
         `;
+
+        card.addEventListener('click', () => {
+            if (item.category === 'Poetry') {
+                window.open('https://www.instagram.com/sapnaaradnyaig', '_blank');
+                window.open('https://www.youtube.com/@sapnaaradnyaYT/shorts', '_blank');
+            } else if (item.category === 'Cinema') {
+                window.location.href = 'cinema.html';
+            }
+        });
+
         return card;
     }
 
