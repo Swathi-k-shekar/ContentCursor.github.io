@@ -12,32 +12,32 @@ document.addEventListener('DOMContentLoaded', () => {
             iconFile: 'assets/Feather Quill.png'
         },
         {
+            title: 'ಸೀರಿಯಲ್',
+            titleEn: 'Serial',
+            category: 'Serial','Series',
+            summary: "Engaging narratives and character-driven plays that brings the character alive.",
+            iconFile: 'assets/Theater Masks.png'
+        },
+        {
+            title: 'ಹಾಡುಗಳು',
+            titleEn: 'Songs',
+            category: 'Songs',
+            summary: "Creative Audio content spanning varied genres, designed for engaging modern audiences. Lyrics suitable for classical Music, Rap, Pop and Cenima",
+            iconFile: 'assets/Mobile Phone Play.png'
+        },
+        {
+            title: 'ಸಣ್ಣ ಕಥೆಗಳು',
+            titleEn: 'Series',
+            category: 'Serial','Series',
+            summary: "A fun, bridge-building Series for K-Drama lovers with Indain slang adding local context.",
+            iconFile: 'assets/Speech Bubble.png'
+        },
+         {
             title: 'ಚಲನಚಿತ್ರ',
             titleEn: 'Cinema',
             category: 'Cinema',
             summary: "Insights, scripts, and discussions diving into the world of storytelling on the silver screen.",
             iconFile: 'assets/Film Reel.png'
-        },
-        {
-            title: 'ನಾಟಕ',
-            titleEn: 'Drama Style',
-            category: 'Drama Style',
-            summary: "Engaging narratives and character-driven plays that bring the stage alive.",
-            iconFile: 'assets/Theater Masks.png'
-        },
-        {
-            title: 'ಯೂಟ್ಯೂಬ್ ಶಾರ್ಟ್ಸ್',
-            titleEn: 'YouTube Short Episodes',
-            category: 'YouTube Short Episodes',
-            summary: "Creative video content spanning varied genres, designed for engaging modern audiences.",
-            iconFile: 'assets/Mobile Phone Play.png'
-        },
-        {
-            title: 'ಕೆ-ಡ್ರಾಮಾ',
-            titleEn: 'K-Drama Slang',
-            category: 'K-Drama Slang',
-            summary: "A fun, bridge-building guide translating popular K-Drama slangs into local context.",
-            iconFile: 'assets/Speech Bubble.png'
         }
     ];
 
