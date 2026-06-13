@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             summary: "A fun, bridge-building Series for K-Drama lovers with Indain slang adding local context.",
             iconFile: 'assets/Speech Bubble.png'
         },
-         {
+        {
             title: 'ಚಲನಚಿತ್ರ',
             titleEn: 'Cinema',
             category: 'Cinema',
