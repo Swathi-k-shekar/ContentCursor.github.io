@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             iconFile: 'assets/Mobile Phone Play.png'
         },
         {
-            title: 'ಕೆ-ಡ್ರಾಮಾ ಭಾಷೆ',
+            title: 'ಕೆ-ಡ್ರಾಮಾ',
             titleEn: 'K-Drama Slang',
             category: 'K-Drama Slang',
             summary: "A fun, bridge-building guide translating popular K-Drama slangs into local context.",
