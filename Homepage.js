@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Default items
     const defaultItems = [
         {
-            title: 'ಕವಿತೆಗಳು',
-            titleEn: 'Poetry',
+            title: 'Poetry',
+            titleEn: '',
             category: 'Poetry',
             summary: "Expressive verses that capture the essence of emotions and life's simple, profound moments.",
             iconFile: 'assets/Feather Quill.png'
@@ -19,15 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
             iconFile: 'assets/Theater Masks.png'
         },
         {
-            title: 'ಸಣ್ಣ ಕಥೆಗಳು',
-            titleEn: 'Series',
+            title: 'Series',
+            titleEn: 'ಸಣ್ಣ ಕಥೆಗಳು',
             category: 'Series',
             summary: "A fun, bridge-building Series for K-Drama lovers with Indain slang adding local context.",
             iconFile: 'assets/Speech Bubble.png'
         },
         {
-            title: 'ಚಲನಚಿತ್ರ',
-            titleEn: 'Cinema',
+            title: 'Songs',
+            titleEn: 'ಹಾಡುಗಳು',
+            category: 'Songs',
+            summary: "",
+            iconFile: 'assets/Mobile Phone Play.png'
+        },
+        {
+            title: 'Cinema',
+            titleEn: '',
             category: 'Cinema',
             summary: "Insights, scripts, and discussions diving into the world of storytelling on the silver screen.",
             iconFile: 'assets/Film Reel.png'
@@ -35,10 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     // Load items from localStorage
-    let contentItems = JSON.parse(localStorage.getItem('contentItemsDarkFantasy'));
+    let contentItems = JSON.parse(localStorage.getItem('contentItemsDarkFantasy_v3'));
     if (!contentItems || contentItems.length === 0) {
         contentItems = defaultItems;
-        localStorage.setItem('contentItemsDarkFantasy', JSON.stringify(contentItems));
+        localStorage.setItem('contentItemsDarkFantasy_v3', JSON.stringify(contentItems));
     }
 
     function renderCard(item) {
@@ -58,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             if (item.category === 'Poetry') {
                 window.open('https://www.instagram.com/sapnaaradnyaig', '_blank');
-                window.open('https://www.youtube.com/@sapnaaradnyaYT/shorts', '_blank');
             } else if (item.category === 'Cinema') {
                 window.location.href = 'cinema.html';
             }
