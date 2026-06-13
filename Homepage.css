@@ -293,7 +293,6 @@ hr {
 .social-container {
     display: flex;
     align-items: center;
-    background: rgba(15, 15, 15, 0.7);
     border: 1px solid rgba(139, 0, 0, 0.4);
     border-radius: 12px;
     padding: 10px 20px;
