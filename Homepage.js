@@ -26,20 +26,17 @@ document.addEventListener('DOMContentLoaded', () => {
             iconFile: 'assets/Speech Bubble.png'
         },
         {
-            title: 'ಚಲನಚಿತ್ರ',
-            titleEn: 'Cinema',
-            category: 'Cinema',
+            title: 'ಚಲನಚಿತ್ರ ಗೀತೆಗಳು',
+            titleEn: 'Cinema Songs',
+            category: 'Cinema Songs',
             summary: "Insights, scripts, and discussions diving into the world of storytelling on the silver screen.",
             iconFile: 'assets/Film Reel.png'
         }
     ];
 
-    // Load items from localStorage
-    let contentItems = JSON.parse(localStorage.getItem('contentItemsDarkFantasy'));
-    if (!contentItems || contentItems.length === 0) {
-        contentItems = defaultItems;
-        localStorage.setItem('contentItemsDarkFantasy', JSON.stringify(contentItems));
-    }
+    // Use default items and overwrite localStorage to ensure correct cards are displayed
+    let contentItems = defaultItems;
+    localStorage.setItem('contentItemsDarkFantasy', JSON.stringify(contentItems));
 
     function renderCard(item) {
         const card = document.createElement('div');
@@ -59,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (item.category === 'Poetry') {
                 window.open('https://www.instagram.com/sapnaaradnyaig', '_blank');
                 window.open('https://www.youtube.com/@sapnaaradnyaYT/shorts', '_blank');
-            } else if (item.category === 'Cinema') {
+            } else if (item.category === 'Cinema Songs') {
                 window.location.href = 'cinema.html';
             }
         });
