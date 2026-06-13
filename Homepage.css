@@ -224,6 +224,7 @@ hr {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 0.6s ease forwards;
+    cursor: pointer;
 }
 
 .content-card:hover {
